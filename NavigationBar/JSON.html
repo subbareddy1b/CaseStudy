@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <!-- link rel='stylesheet' href='../static/css/app.css' th:href="@{/css/app.css}"-->
+    <!-- <script src="newScript.js"></script> in body modify according to location of newScript.js-->
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/887/91/png-transparent-bajaj-auto-bajaj-finserv-ltd-mortgage-loan-finance-finance-blue-company-text.png">
+    <!-- the above link is for logo -->
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="AES.html" class="nav-logo">Bajaj Utility Portal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="AES.html" class="nav-link">AES</a></li>
+                <li class="nav-item"><a href="Base64.html" class="nav-link">BASE64</a></li>
+                <li class="nav-item"><a href="JSON.html" class="nav-link">JSON</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="newScript.js"></script>
+
+
+    <!-- <div class="body-text"><h1>This is a JSON page</h1></div> -->
+    <div class="aes">
+                <!--<form th:action="@{jsonb}" th:object="${jsonbeautify}" method="post">  -->
+        <form>
+            <h1 style="font-size: 30px;color:black;text-align: center;padding-bottom: 25px;">JSON Beautify</h1>
+            <div class="input-group">
+                <textarea input="inputText" id="plaintext" name="plaintext" rows="8" required></textarea>
+                <label for="plaintext">Enter JSON text to Beautify</label>
+            </div>
+            
+            <div class="input-group">
+            <button type="submit">Beautify</button>
+            </div>
+
+            <div class="input-group">
+                <textarea output="outputText" id="jsonout" rows="8"></textarea>
+                <label for="jsonout">Beautified JSON Output</label>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
